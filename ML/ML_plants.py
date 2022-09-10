@@ -12,8 +12,8 @@ import matplotlib.pyplot as plt
 from google.colab import files
 import io
 import seaborn as sns
-
 from sklearn import datasets
+
 iris=datasets.load_iris()
 
 print(iris.DESCR)
@@ -79,11 +79,9 @@ corrMatrix = irisFeatures.corr()
 sns.heatmap(corrMatrix, annot=True)
 plt.show()
 
-import seaborn as sns
 sns.scatterplot(data=irisDF, x='SepalLengthCm', y='SepalWidthCm', hue=irisDF['Species'])
 plt.show()
 
-import seaborn as sns
 sns.scatterplot(data=irisDF, x='PetalLengthCm', y='PetalWidthCm', hue=irisDF['Species'])
 plt.show()
 
